@@ -74,7 +74,7 @@
         ]
       }
     ],
-    "budget_hours": 34,
+    "budget_hours": 34.0,
     "benefit_factor": 0.065,
     "horizons_hours": [
       30,
@@ -158,7 +158,7 @@
     "_instructions": "Illustrative profile. Every value is a hypothesis: lower execution penalties mean easier for YOU, not inherently easier for humans. Edit, rerun and compare sensitivity."
   },
   "explored_states": 1139,
-  "baseline_effort": 4.622398178279743,
+  "baseline_effort": 4.836663917756691,
   "rankings_by_playing_hours": {
     "30.0": [
       {
@@ -175,7 +175,7 @@
         },
         "learned": [],
         "investment_hours": 0.0,
-        "effort": 4.6224,
+        "effort": 4.8367,
         "effort_reduction": 0.0,
         "net_practice_hour_equivalents": 0.0,
         "route": []
@@ -194,7 +194,7 @@
         },
         "learned": [],
         "investment_hours": 2.0,
-        "effort": 3.9312,
+        "effort": 4.1454,
         "effort_reduction": 0.6912,
         "net_practice_hour_equivalents": -0.65,
         "route": [
@@ -218,9 +218,9 @@
         },
         "learned": [],
         "investment_hours": 1.5,
-        "effort": 4.3869,
-        "effort_reduction": 0.2355,
-        "net_practice_hour_equivalents": -1.04,
+        "effort": 4.6463,
+        "effort_reduction": 0.1904,
+        "net_practice_hour_equivalents": -1.13,
         "route": [
           {
             "action": "move crash to -1",
@@ -242,9 +242,9 @@
         },
         "learned": [],
         "investment_hours": 3.5,
-        "effort": 3.6957,
-        "effort_reduction": 0.9267,
-        "net_practice_hour_equivalents": -1.69,
+        "effort": 3.9551,
+        "effort_reduction": 0.8816,
+        "net_practice_hour_equivalents": -1.78,
         "route": [
           {
             "action": "move crash to -1",
@@ -253,30 +253,6 @@
           {
             "action": "move ride to -1",
             "hours": 2.0
-          }
-        ]
-      },
-      {
-        "state": "HH:L Ride:R Crash:R Floor:R Toms:standard Snare:R KickFoot:R HatFoot:L\nSkills: established L lead",
-        "kit": {
-          "hh": -1,
-          "ride": 1,
-          "crash": 1,
-          "floor": 1,
-          "toms": 0,
-          "snare": 1,
-          "kick_foot": 1,
-          "hat_foot": -1
-        },
-        "learned": [],
-        "investment_hours": 3.0,
-        "effort": 4.6797,
-        "effort_reduction": -0.0573,
-        "net_practice_hour_equivalents": -3.11,
-        "route": [
-          {
-            "action": "move snare to +1",
-            "hours": 3.0
           }
         ]
       },
@@ -294,12 +270,36 @@
         },
         "learned": [],
         "investment_hours": 3.0,
-        "effort": 4.6876,
-        "effort_reduction": -0.0652,
-        "net_practice_hour_equivalents": -3.13,
+        "effort": 4.8943,
+        "effort_reduction": -0.0576,
+        "net_practice_hour_equivalents": -3.11,
         "route": [
           {
             "action": "move snare to -1",
+            "hours": 3.0
+          }
+        ]
+      },
+      {
+        "state": "HH:L Ride:R Crash:R Floor:R Toms:standard Snare:R KickFoot:R HatFoot:L\nSkills: established L lead",
+        "kit": {
+          "hh": -1,
+          "ride": 1,
+          "crash": 1,
+          "floor": 1,
+          "toms": 0,
+          "snare": 1,
+          "kick_foot": 1,
+          "hat_foot": -1
+        },
+        "learned": [],
+        "investment_hours": 3.0,
+        "effort": 4.9008,
+        "effort_reduction": -0.0641,
+        "net_practice_hour_equivalents": -3.13,
+        "route": [
+          {
+            "action": "move snare to +1",
             "hours": 3.0
           }
         ]
@@ -318,9 +318,9 @@
         },
         "learned": [],
         "investment_hours": 5.0,
-        "effort": 3.9823,
-        "effort_reduction": 0.6401,
-        "net_practice_hour_equivalents": -3.75,
+        "effort": 4.2034,
+        "effort_reduction": 0.6333,
+        "net_practice_hour_equivalents": -3.77,
         "route": [
           {
             "action": "move ride to -1",
@@ -346,9 +346,9 @@
         },
         "learned": [],
         "investment_hours": 5.0,
-        "effort": 4.0025,
-        "effort_reduction": 0.6199,
-        "net_practice_hour_equivalents": -3.79,
+        "effort": 4.2092,
+        "effort_reduction": 0.6275,
+        "net_practice_hour_equivalents": -3.78,
         "route": [
           {
             "action": "move ride to -1",
@@ -362,58 +362,6 @@
       }
     ],
     "200.0": [
-      {
-        "state": "HH:L Ride:L Crash:L Floor:R Toms:standard Snare:C KickFoot:R HatFoot:L\nSkills: established L lead",
-        "kit": {
-          "hh": -1,
-          "ride": -1,
-          "crash": -1,
-          "floor": 1,
-          "toms": 0,
-          "snare": 0,
-          "kick_foot": 1,
-          "hat_foot": -1
-        },
-        "learned": [],
-        "investment_hours": 3.5,
-        "effort": 3.6957,
-        "effort_reduction": 0.9267,
-        "net_practice_hour_equivalents": 8.55,
-        "route": [
-          {
-            "action": "move crash to -1",
-            "hours": 1.5
-          },
-          {
-            "action": "move ride to -1",
-            "hours": 2.0
-          }
-        ]
-      },
-      {
-        "state": "HH:L Ride:L Crash:R Floor:R Toms:standard Snare:C KickFoot:R HatFoot:L\nSkills: established L lead",
-        "kit": {
-          "hh": -1,
-          "ride": -1,
-          "crash": 1,
-          "floor": 1,
-          "toms": 0,
-          "snare": 0,
-          "kick_foot": 1,
-          "hat_foot": -1
-        },
-        "learned": [],
-        "investment_hours": 2.0,
-        "effort": 3.9312,
-        "effort_reduction": 0.6912,
-        "net_practice_hour_equivalents": 6.99,
-        "route": [
-          {
-            "action": "move ride to -1",
-            "hours": 2.0
-          }
-        ]
-      },
       {
         "state": "HH:L Ride:L Crash:R Floor:R Toms:standard Snare:C KickFoot:R HatFoot:L\nSkills: RIGHT_FILL_LEAD",
         "kit": {
@@ -430,9 +378,9 @@
           "RIGHT_FILL_LEAD"
         ],
         "investment_hours": 11.0,
-        "effort": 3.2525,
-        "effort_reduction": 1.3699,
-        "net_practice_hour_equivalents": 6.81,
+        "effort": 3.3341,
+        "effort_reduction": 1.5026,
+        "net_practice_hour_equivalents": 8.53,
         "route": [
           {
             "action": "move ride to -1",
@@ -441,6 +389,34 @@
           {
             "action": "learn RIGHT_FILL_LEAD",
             "hours": 9.0
+          }
+        ]
+      },
+      {
+        "state": "HH:L Ride:L Crash:L Floor:R Toms:standard Snare:C KickFoot:R HatFoot:L\nSkills: established L lead",
+        "kit": {
+          "hh": -1,
+          "ride": -1,
+          "crash": -1,
+          "floor": 1,
+          "toms": 0,
+          "snare": 0,
+          "kick_foot": 1,
+          "hat_foot": -1
+        },
+        "learned": [],
+        "investment_hours": 3.5,
+        "effort": 3.9551,
+        "effort_reduction": 0.8816,
+        "net_practice_hour_equivalents": 7.96,
+        "route": [
+          {
+            "action": "move crash to -1",
+            "hours": 1.5
+          },
+          {
+            "action": "move ride to -1",
+            "hours": 2.0
           }
         ]
       },
@@ -461,10 +437,73 @@
           "LEAD_SWITCH"
         ],
         "investment_hours": 17.0,
-        "effort": 2.887,
-        "effort_reduction": 1.7354,
-        "net_practice_hour_equivalents": 5.56,
+        "effort": 2.9726,
+        "effort_reduction": 1.864,
+        "net_practice_hour_equivalents": 7.23,
         "route": [
+          {
+            "action": "move ride to -1",
+            "hours": 2.0
+          },
+          {
+            "action": "learn RIGHT_FILL_LEAD",
+            "hours": 9.0
+          },
+          {
+            "action": "learn LEAD_SWITCH",
+            "hours": 6.0
+          }
+        ]
+      },
+      {
+        "state": "HH:L Ride:L Crash:R Floor:R Toms:standard Snare:C KickFoot:R HatFoot:L\nSkills: established L lead",
+        "kit": {
+          "hh": -1,
+          "ride": -1,
+          "crash": 1,
+          "floor": 1,
+          "toms": 0,
+          "snare": 0,
+          "kick_foot": 1,
+          "hat_foot": -1
+        },
+        "learned": [],
+        "investment_hours": 2.0,
+        "effort": 4.1454,
+        "effort_reduction": 0.6912,
+        "net_practice_hour_equivalents": 6.99,
+        "route": [
+          {
+            "action": "move ride to -1",
+            "hours": 2.0
+          }
+        ]
+      },
+      {
+        "state": "HH:L Ride:L Crash:L Floor:R Toms:standard Snare:C KickFoot:R HatFoot:L\nSkills: RIGHT_FILL_LEAD,LEAD_SWITCH",
+        "kit": {
+          "hh": -1,
+          "ride": -1,
+          "crash": -1,
+          "floor": 1,
+          "toms": 0,
+          "snare": 0,
+          "kick_foot": 1,
+          "hat_foot": -1
+        },
+        "learned": [
+          "RIGHT_FILL_LEAD",
+          "LEAD_SWITCH"
+        ],
+        "investment_hours": 18.5,
+        "effort": 2.936,
+        "effort_reduction": 1.9006,
+        "net_practice_hour_equivalents": 6.21,
+        "route": [
+          {
+            "action": "move crash to -1",
+            "hours": 1.5
+          },
           {
             "action": "move ride to -1",
             "hours": 2.0
@@ -495,9 +534,9 @@
           "RIGHT_FILL_LEAD"
         ],
         "investment_hours": 12.5,
-        "effort": 3.2563,
-        "effort_reduction": 1.3661,
-        "net_practice_hour_equivalents": 5.26,
+        "effort": 3.4041,
+        "effort_reduction": 1.4326,
+        "net_practice_hour_equivalents": 6.12,
         "route": [
           {
             "action": "move crash to -1",
@@ -510,45 +549,6 @@
           {
             "action": "learn RIGHT_FILL_LEAD",
             "hours": 9.0
-          }
-        ]
-      },
-      {
-        "state": "HH:L Ride:L Crash:L Floor:R Toms:standard Snare:C KickFoot:R HatFoot:L\nSkills: RIGHT_FILL_LEAD,LEAD_SWITCH",
-        "kit": {
-          "hh": -1,
-          "ride": -1,
-          "crash": -1,
-          "floor": 1,
-          "toms": 0,
-          "snare": 0,
-          "kick_foot": 1,
-          "hat_foot": -1
-        },
-        "learned": [
-          "RIGHT_FILL_LEAD",
-          "LEAD_SWITCH"
-        ],
-        "investment_hours": 18.5,
-        "effort": 2.8065,
-        "effort_reduction": 1.8159,
-        "net_practice_hour_equivalents": 5.11,
-        "route": [
-          {
-            "action": "move crash to -1",
-            "hours": 1.5
-          },
-          {
-            "action": "move ride to -1",
-            "hours": 2.0
-          },
-          {
-            "action": "learn RIGHT_FILL_LEAD",
-            "hours": 9.0
-          },
-          {
-            "action": "learn LEAD_SWITCH",
-            "hours": 6.0
           }
         ]
       },
@@ -568,9 +568,9 @@
           "RIGHT_FILL_LEAD"
         ],
         "investment_hours": 14.0,
-        "effort": 3.2896,
-        "effort_reduction": 1.3328,
-        "net_practice_hour_equivalents": 3.33,
+        "effort": 3.3523,
+        "effort_reduction": 1.4843,
+        "net_practice_hour_equivalents": 5.3,
         "route": [
           {
             "action": "move ride to -1",
@@ -587,7 +587,7 @@
         ]
       },
       {
-        "state": "HH:L Ride:L Crash:R Floor:R Toms:standard Snare:R KickFoot:R HatFoot:L\nSkills: established L lead",
+        "state": "HH:L Ride:L Crash:R Floor:R Toms:standard Snare:R KickFoot:R HatFoot:L\nSkills: RIGHT_FILL_LEAD",
         "kit": {
           "hh": -1,
           "ride": -1,
@@ -598,11 +598,13 @@
           "kick_foot": 1,
           "hat_foot": -1
         },
-        "learned": [],
-        "investment_hours": 5.0,
-        "effort": 3.9823,
-        "effort_reduction": 0.6401,
-        "net_practice_hour_equivalents": 3.32,
+        "learned": [
+          "RIGHT_FILL_LEAD"
+        ],
+        "investment_hours": 14.0,
+        "effort": 3.3911,
+        "effort_reduction": 1.4456,
+        "net_practice_hour_equivalents": 4.79,
         "route": [
           {
             "action": "move ride to -1",
@@ -611,11 +613,55 @@
           {
             "action": "move snare to +1",
             "hours": 3.0
+          },
+          {
+            "action": "learn RIGHT_FILL_LEAD",
+            "hours": 9.0
           }
         ]
       }
     ],
     "800.0": [
+      {
+        "state": "HH:L Ride:L Crash:R Floor:R Toms:standard Snare:C KickFoot:R HatFoot:L\nSkills: LEFT_SNARE,RIGHT_FILL_LEAD,LEAD_SWITCH",
+        "kit": {
+          "hh": -1,
+          "ride": -1,
+          "crash": 1,
+          "floor": 1,
+          "toms": 0,
+          "snare": 0,
+          "kick_foot": 1,
+          "hat_foot": -1
+        },
+        "learned": [
+          "LEFT_SNARE",
+          "RIGHT_FILL_LEAD",
+          "LEAD_SWITCH"
+        ],
+        "investment_hours": 26.0,
+        "effort": 2.7805,
+        "effort_reduction": 2.0562,
+        "net_practice_hour_equivalents": 80.92,
+        "route": [
+          {
+            "action": "move ride to -1",
+            "hours": 2.0
+          },
+          {
+            "action": "learn RIGHT_FILL_LEAD",
+            "hours": 9.0
+          },
+          {
+            "action": "learn LEAD_SWITCH",
+            "hours": 6.0
+          },
+          {
+            "action": "learn LEFT_SNARE",
+            "hours": 9.0
+          }
+        ]
+      },
       {
         "state": "HH:L Ride:L Crash:L Floor:R Toms:standard Snare:C KickFoot:R HatFoot:L\nSkills: RIGHT_FILL_LEAD,LEAD_SWITCH",
         "kit": {
@@ -633,9 +679,9 @@
           "LEAD_SWITCH"
         ],
         "investment_hours": 18.5,
-        "effort": 2.8065,
-        "effort_reduction": 1.8159,
-        "net_practice_hour_equivalents": 75.93,
+        "effort": 2.936,
+        "effort_reduction": 1.9006,
+        "net_practice_hour_equivalents": 80.33,
         "route": [
           {
             "action": "move crash to -1",
@@ -656,7 +702,7 @@
         ]
       },
       {
-        "state": "HH:L Ride:L Crash:R Floor:R Toms:standard Snare:C KickFoot:R HatFoot:L\nSkills: LEFT_SNARE,RIGHT_FILL_LEAD,LEAD_SWITCH",
+        "state": "HH:L Ride:L Crash:R Floor:R Toms:standard Snare:C KickFoot:R HatFoot:L\nSkills: RIGHT_FILL_LEAD,LEAD_SWITCH",
         "kit": {
           "hh": -1,
           "ride": -1,
@@ -668,14 +714,13 @@
           "hat_foot": -1
         },
         "learned": [
-          "LEFT_SNARE",
           "RIGHT_FILL_LEAD",
           "LEAD_SWITCH"
         ],
-        "investment_hours": 26.0,
-        "effort": 2.6895,
-        "effort_reduction": 1.9329,
-        "net_practice_hour_equivalents": 74.51,
+        "investment_hours": 17.0,
+        "effort": 2.9726,
+        "effort_reduction": 1.864,
+        "net_practice_hour_equivalents": 79.93,
         "route": [
           {
             "action": "move ride to -1",
@@ -688,10 +733,6 @@
           {
             "action": "learn LEAD_SWITCH",
             "hours": 6.0
-          },
-          {
-            "action": "learn LEFT_SNARE",
-            "hours": 9.0
           }
         ]
       },
@@ -713,9 +754,9 @@
           "LEAD_SWITCH"
         ],
         "investment_hours": 27.5,
-        "effort": 2.6746,
-        "effort_reduction": 1.9478,
-        "net_practice_hour_equivalents": 73.79,
+        "effort": 2.8174,
+        "effort_reduction": 2.0193,
+        "net_practice_hour_equivalents": 77.5,
         "route": [
           {
             "action": "move crash to -1",
@@ -740,41 +781,6 @@
         ]
       },
       {
-        "state": "HH:L Ride:L Crash:R Floor:R Toms:standard Snare:C KickFoot:R HatFoot:L\nSkills: RIGHT_FILL_LEAD,LEAD_SWITCH",
-        "kit": {
-          "hh": -1,
-          "ride": -1,
-          "crash": 1,
-          "floor": 1,
-          "toms": 0,
-          "snare": 0,
-          "kick_foot": 1,
-          "hat_foot": -1
-        },
-        "learned": [
-          "RIGHT_FILL_LEAD",
-          "LEAD_SWITCH"
-        ],
-        "investment_hours": 17.0,
-        "effort": 2.887,
-        "effort_reduction": 1.7354,
-        "net_practice_hour_equivalents": 73.24,
-        "route": [
-          {
-            "action": "move ride to -1",
-            "hours": 2.0
-          },
-          {
-            "action": "learn RIGHT_FILL_LEAD",
-            "hours": 9.0
-          },
-          {
-            "action": "learn LEAD_SWITCH",
-            "hours": 6.0
-          }
-        ]
-      },
-      {
         "state": "HH:L Ride:L Crash:R Floor:R Toms:standard Snare:R KickFoot:R HatFoot:L\nSkills: LEFT_SNARE,RIGHT_FILL_LEAD,LEAD_SWITCH",
         "kit": {
           "hh": -1,
@@ -792,9 +798,9 @@
           "LEAD_SWITCH"
         ],
         "investment_hours": 29.0,
-        "effort": 2.7346,
-        "effort_reduction": 1.8878,
-        "net_practice_hour_equivalents": 69.16,
+        "effort": 2.8299,
+        "effort_reduction": 2.0068,
+        "net_practice_hour_equivalents": 75.35,
         "route": [
           {
             "action": "move ride to -1",
@@ -835,9 +841,9 @@
           "LEAD_SWITCH"
         ],
         "investment_hours": 20.0,
-        "effort": 2.9127,
-        "effort_reduction": 1.7097,
-        "net_practice_hour_equivalents": 68.9,
+        "effort": 3.0052,
+        "effort_reduction": 1.8315,
+        "net_practice_hour_equivalents": 75.24,
         "route": [
           {
             "action": "move ride to -1",
@@ -854,50 +860,6 @@
           {
             "action": "learn LEAD_SWITCH",
             "hours": 6.0
-          }
-        ]
-      },
-      {
-        "state": "HH:L Ride:L Crash:L Floor:R Toms:standard Snare:C KickFoot:R HatFoot:L\nSkills: RIGHT_RIDE,RIGHT_FILL_LEAD,LEAD_SWITCH",
-        "kit": {
-          "hh": -1,
-          "ride": -1,
-          "crash": -1,
-          "floor": 1,
-          "toms": 0,
-          "snare": 0,
-          "kick_foot": 1,
-          "hat_foot": -1
-        },
-        "learned": [
-          "RIGHT_RIDE",
-          "RIGHT_FILL_LEAD",
-          "LEAD_SWITCH"
-        ],
-        "investment_hours": 26.5,
-        "effort": 2.8065,
-        "effort_reduction": 1.8159,
-        "net_practice_hour_equivalents": 67.93,
-        "route": [
-          {
-            "action": "move crash to -1",
-            "hours": 1.5
-          },
-          {
-            "action": "move ride to -1",
-            "hours": 2.0
-          },
-          {
-            "action": "learn RIGHT_FILL_LEAD",
-            "hours": 9.0
-          },
-          {
-            "action": "learn LEAD_SWITCH",
-            "hours": 6.0
-          },
-          {
-            "action": "learn RIGHT_RIDE",
-            "hours": 8.0
           }
         ]
       },
@@ -919,9 +881,9 @@
           "LEAD_SWITCH"
         ],
         "investment_hours": 29.0,
-        "effort": 2.7672,
-        "effort_reduction": 1.8552,
-        "net_practice_hour_equivalents": 67.47,
+        "effort": 2.8542,
+        "effort_reduction": 1.9825,
+        "net_practice_hour_equivalents": 74.09,
         "route": [
           {
             "action": "move ride to -1",
@@ -942,6 +904,45 @@
           {
             "action": "learn LEFT_SNARE",
             "hours": 9.0
+          }
+        ]
+      },
+      {
+        "state": "HH:L Ride:L Crash:R Floor:R Toms:standard Snare:L KickFoot:R HatFoot:L\nSkills: RIGHT_FILL_LEAD,LEAD_SWITCH",
+        "kit": {
+          "hh": -1,
+          "ride": -1,
+          "crash": 1,
+          "floor": 1,
+          "toms": 0,
+          "snare": -1,
+          "kick_foot": 1,
+          "hat_foot": -1
+        },
+        "learned": [
+          "RIGHT_FILL_LEAD",
+          "LEAD_SWITCH"
+        ],
+        "investment_hours": 20.0,
+        "effort": 3.0584,
+        "effort_reduction": 1.7783,
+        "net_practice_hour_equivalents": 72.47,
+        "route": [
+          {
+            "action": "move ride to -1",
+            "hours": 2.0
+          },
+          {
+            "action": "move snare to -1",
+            "hours": 3.0
+          },
+          {
+            "action": "learn RIGHT_FILL_LEAD",
+            "hours": 9.0
+          },
+          {
+            "action": "learn LEAD_SWITCH",
+            "hours": 6.0
           }
         ]
       }
@@ -979,30 +980,30 @@
     {
       "phrase": "rightward_fill",
       "hand": "L",
-      "effort": 5.643,
+      "effort": 6.703,
       "posture": "-",
-      "sticking": "SN:L | SN:R | SN:L | SN:R | T1:L | T1:R | T1:L | T1:L | FT:R | FT:R | FT:L | FT:R | CRASH:R"
+      "sticking": "SN:L | SN:R | SN:L | SN:R | T1:L | T1:L | T1:R | T1:L | T2:R | T2:L | T2:R | T2:L | FT:R | FT:L | FT:R | FT:L | CRASH:R"
     },
     {
       "phrase": "rightward_fill",
       "hand": "R",
-      "effort": 6.315,
+      "effort": 7.375,
       "posture": "-",
-      "sticking": "SN:R | SN:L | SN:R | SN:R | T1:L | T1:R | T1:L | T1:L | FT:R | FT:R | FT:L | FT:R | CRASH:R"
+      "sticking": "SN:R | SN:L | SN:R | SN:R | T1:L | T1:L | T1:R | T1:L | T2:R | T2:L | T2:R | T2:L | FT:R | FT:L | FT:R | FT:L | CRASH:R"
     },
     {
       "phrase": "leftward_fill",
       "hand": "L",
-      "effort": 5.742,
+      "effort": 6.79,
       "posture": "-",
-      "sticking": "FT:L | FT:R | FT:L | FT:R | T2:L | T2:R | T2:L | T2:R | SN:L | SN:R | SN:R | SN:L | CRASH:R"
+      "sticking": "FT:L | FT:R | FT:L | FT:R | T2:L | T2:R | T2:L | T2:R | T1:L | T1:R | T1:L | T1:L | SN:R | SN:L | SN:R | SN:L | CRASH:R"
     },
     {
       "phrase": "leftward_fill",
       "hand": "R",
-      "effort": 6.356,
+      "effort": 7.404,
       "posture": "-",
-      "sticking": "FT:R | FT:L | FT:R | FT:R | T2:L | T2:R | T2:L | T2:R | SN:L | SN:R | SN:R | SN:L | CRASH:R"
+      "sticking": "FT:R | FT:L | FT:R | FT:R | T2:L | T2:R | T2:L | T2:R | T1:L | T1:R | T1:L | T1:L | SN:R | SN:L | SN:R | SN:L | CRASH:R"
     }
   ],
   "long_horizon_winner_AB": [
@@ -1016,7 +1017,7 @@
     {
       "phrase": "straight_hh",
       "hand": "R",
-      "effort": 10.362,
+      "effort": 9.872,
       "posture": "crossed",
       "sticking": "HH:R | rest | HH:R | rest | HH:R+SN:L | rest | HH:R | rest | HH:R | rest | HH:R | rest | HH:R+SN:L | rest | HH:R | rest"
     },
@@ -1030,51 +1031,51 @@
     {
       "phrase": "right_ride",
       "hand": "R",
-      "effort": 10.357,
+      "effort": 9.867,
       "posture": "crossed",
       "sticking": "RIDE:R | rest | RIDE:R | rest | RIDE:R+SN:L | rest | RIDE:R | K | RIDE:R | rest | RIDE:R | rest | RIDE:R+SN:L | rest | RIDE:R | rest"
     },
     {
       "phrase": "rightward_fill",
       "hand": "L",
-      "effort": 4.021,
+      "effort": 3.838,
       "posture": "-",
-      "sticking": "SN:L | SN:R | SN:L | SN:R | T1:L | T1:R | T1:L | T1:L | FT:R | FT:L | FT:R | FT:R | CRASH:L"
+      "sticking": "SN:L | SN:R | SN:L | SN:R | T1:L | T1:L | T1:R | T1:L | T2:R | T2:L | T2:R | T2:L | FT:R | FT:R | FT:L | FT:R | CRASH:R"
     },
     {
       "phrase": "rightward_fill",
       "hand": "R",
-      "effort": 3.933,
+      "effort": 3.996,
       "posture": "-",
-      "sticking": "SN:R | SN:L | SN:R | SN:R | T1:L | T1:R | T1:L | T1:L | FT:R | FT:L | FT:R | FT:R | CRASH:L"
+      "sticking": "SN:R | SN:L | SN:R | SN:R | T1:L | T1:L | T1:R | T1:L | T2:R | T2:L | T2:R | T2:L | FT:R | FT:R | FT:L | FT:R | CRASH:R"
     },
     {
       "phrase": "leftward_fill",
       "hand": "L",
-      "effort": 4.087,
+      "effort": 4.395,
       "posture": "-",
-      "sticking": "FT:L | FT:R | FT:L | FT:R | T2:L | T2:R | T2:L | T2:R | SN:L | SN:R | SN:L | SN:R | CRASH:L"
+      "sticking": "FT:L | FT:R | FT:L | FT:R | T2:L | T2:R | T2:L | T2:R | T1:L | T1:R | T1:L | T1:L | SN:R | SN:L | SN:R | SN:L | CRASH:R"
     },
     {
       "phrase": "leftward_fill",
       "hand": "R",
-      "effort": 3.806,
+      "effort": 4.114,
       "posture": "-",
-      "sticking": "FT:R | FT:L | FT:R | FT:R | T2:L | T2:R | T2:L | T2:R | SN:L | SN:R | SN:L | SN:R | CRASH:L"
+      "sticking": "FT:R | FT:L | FT:R | FT:R | T2:L | T2:R | T2:L | T2:R | T1:L | T1:R | T1:L | T1:L | SN:R | SN:L | SN:R | SN:L | CRASH:R"
     }
   ],
   "exact_rightward_fill_stickings": {
     "baseline": {
-      "RRLLRRLLRRLLR": 6.774,
-      "LLRRLLRRLLRRL": 6.94,
-      "RLRLRLRLRLRLR": 6.451,
-      "LRLRLRLRLRLRL": 6.617
+      "RRLLRRLLRRLLRRLLR": 7.978,
+      "LLRRLLRRLLRRLLRRL": 7.764,
+      "RLRLRLRLRLRLRLRLR": 7.452,
+      "LRLRLRLRLRLRLRLRL": 7.238
     },
     "long_horizon_winner": {
-      "RRLLRRLLRRLLR": 7.874,
-      "LLRRLLRRLLRRL": 5.853,
-      "RLRLRLRLRLRLR": 7.634,
-      "LRLRLRLRLRLRL": 5.613
+      "RRLLRRLLRRLLRRLLR": 4.868,
+      "LLRRLLRRLLRRLLRRL": 6.464,
+      "RLRLRLRLRLRLRLRLR": 4.342,
+      "LRLRLRLRLRLRLRLRL": 5.938
     }
   }
 }

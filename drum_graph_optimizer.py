@@ -200,16 +200,42 @@ def groove(cymbal: str, syncopated: bool = False) -> tuple[Step, ...]:
     return tuple(seq)
 
 
-def make_repertoire(weights: dict[str, float], custom_patterns: Optional[list] = None) -> tuple[Phrase, ...]:
-    cases = {
+def builtin_cases() -> dict[str, tuple[Step, ...]]:
+    """Representative phrases, one bar of 16ths each.
+
+    The two directional fills are exact mirrors: the same four drums in
+    reversed order, so their per-leg travel is the negation-and-reversal of
+    each other. Any earlier asymmetry (one fill skipping a rack tom, or the
+    two covering different total distance) confounded the L-vs-R comparison
+    that `comparison_table` reports. The closing CRASH is the one remaining
+    asymmetry and is deliberate: a leftward fill really does have to travel
+    back across the kit to resolve.
+    """
+    return {
         "straight_hh": groove("HH"),
         "syncopated_hh": groove("HH", syncopated=True),
         "right_ride": groove("RIDE", syncopated=True),
-        "rightward_fill": fill(("SN", 4), ("T1", 4), ("FT", 4), ("CRASH", 1)),
-        "leftward_fill": fill(("FT", 4), ("T2", 4), ("SN", 4), ("CRASH", 1)),
+        "rightward_fill": fill(("SN", 4), ("T1", 4), ("T2", 4), ("FT", 4), ("CRASH", 1)),
+        "leftward_fill": fill(("FT", 4), ("T2", 4), ("T1", 4), ("SN", 4), ("CRASH", 1)),
         "round_trip_fill": fill(("SN", 2), ("T1", 2), ("FT", 2), ("T2", 2), ("SN", 2), ("CRASH", 1)),
-        "groove_to_fill": groove("HH")[:8] + fill(("SN", 2), ("T1", 2), ("FT", 2), ("CRASH", 1)),
+        "groove_to_fill": groove("HH")[:8] + fill(("SN", 2), ("T1", 2), ("T2", 2), ("FT", 1), ("CRASH", 1)),
     }
+
+
+def diagnostic_phrase(name: str, repertoire: tuple[Phrase, ...]) -> Phrase:
+    """Fetch a phrase for an A/B diagnostic, weighted copy preferred.
+
+    A zero `repertoire_weights` entry drops a phrase from the repertoire, but
+    the fixed diagnostics must still run, so fall back to the builtin case.
+    """
+    for phrase in repertoire:
+        if phrase.name == name:
+            return phrase
+    return Phrase(name, builtin_cases()[name], 0.0)
+
+
+def make_repertoire(weights: dict[str, float], custom_patterns: Optional[list] = None) -> tuple[Phrase, ...]:
+    cases = builtin_cases()
     repertoire = [Phrase(k, cases[k], weights.get(k, 0.0)) for k in cases if weights.get(k, 0) > 0]
     allowed_drums = {"HH", "RIDE", "SN", "T1", "T2", "FT", "CRASH"}
     for entry in custom_patterns or []:
@@ -369,10 +395,16 @@ def advance(motor: Motor, step: Step, hands: tuple[str, ...],
             # Explicit kick-foot identifier; legacy _K defaults to right kick.
             key = f"{mp[cym]}_{cym}_{mp['SN']}_SN_K{'R' if kit.kick_foot == 1 else 'L'}"
             fallback = f"{mp[cym]}_{cym}_{mp['SN']}_SN_K"
-            cost += params["hand_foot_pairing"].get(key, params["hand_foot_pairing"].get(fallback, 0.0))
+            pairing = params["hand_foot_pairing"].get(
+                key, params["hand_foot_pairing"].get(fallback, 0.0))
             if (mp[cym] == "R" and mp["SN"] == "L"
                     and state.has("CROSSED_HAND_FOOT")):
-                cost -= params["pairing_gain_from_training"]
+                # Training can erase a coupling penalty but must not go below
+                # an uncoupled limb: a negative cost would reward crossing,
+                # and any pairing weight under pairing_gain_from_training
+                # (or absent from the table) used to do exactly that.
+                pairing = max(0.0, pairing - params["pairing_gain_from_training"])
+            cost += pairing
 
     if step.hat_pedal:
         if step.kick and kit.hat_foot == kit.kick_foot:
@@ -564,7 +596,7 @@ def predict(params: dict):
 def comparison_table(state: State, params: dict, repertoire: tuple[Phrase, ...]) -> list[dict]:
     summaries = []
     for name in ("straight_hh", "right_ride", "rightward_fill", "leftward_fill"):
-        phrase = next(p for p in repertoire if p.name == name)
+        phrase = diagnostic_phrase(name, repertoire)
         direction = "cymbal" if name in ("straight_hh", "right_ride") else "fill"
         for hand in ("L", "R"):
             result = optimize_phrase(phrase, state, params,
@@ -662,12 +694,12 @@ def main() -> None:
 
     # Compare the user's actual RRLL vs LLRR orchestration, not merely the
     # beam search's unconstrained optimum.
-    fill_phrase = next(p for p in repertoire if p.name == "rightward_fill")
+    fill_phrase = diagnostic_phrase("rightward_fill", repertoire)
     fixed_comparison = {}
     for name, node in (("baseline", result["start"]), ("long_horizon_winner", selected)):
         fixed_comparison[name] = {}
         print(f"\nExact rightward tom fill on {name}:")
-        for sticking in ("RRLL"*3+"R", "LLRR"*3+"L", "RLRL"*3+"R", "LRLR"*3+"L"):
+        for sticking in ("RRLL"*4+"R", "LLRR"*4+"L", "RLRL"*4+"R", "LRLR"*4+"L"):
             c = evaluate_fixed_sticking(fill_phrase, node, params, sticking)
             fixed_comparison[name][sticking] = round(c.score, 3)
             print(f"  {sticking} -> {c.score:.3f} effort points")
