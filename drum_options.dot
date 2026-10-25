@@ -1,0 +1,33 @@
+digraph MotorLearning {
+  rankdir=TB;
+  graph [fontname=Helvetica, bgcolor=white];
+  node [shape=box, style=rounded, fontname=Helvetica, fontsize=9];
+  edge [fontname=Helvetica, fontsize=9];
+  n0 [label="HH:L  Ride:L  Crash:L  Floor:R\nR_FILL_LEAD,LEAD_SWITCH\nInvest 18.5h | Net +75.9h", fillcolor="#D2EEE1", style="rounded,filled"];
+  n1 [label="HH:L  Ride:L  Crash:R  Floor:R\nL_SNARE,R_FILL_LEAD,LEAD_SWITCH\nInvest 26h | Net +74.5h"];
+  n2 [label="HH:L  Ride:L  Crash:R  Floor:R\nToms:0 Snare:1 Kick:1 HatPedal:-1\nL_SNARE,R_FILL_LEAD,LEAD_SWITCH\nInvest 29h | Net +69.2h"];
+  n3 [label="HH:L  Ride:L  Crash:R  Floor:R\nToms:0 Snare:1 Kick:1 HatPedal:-1\nR_FILL_LEAD,LEAD_SWITCH\nInvest 20h | Net +68.9h"];
+  n4 [label="HH:L  Ride:L  Crash:R  Floor:R\nToms:0 Snare:1 Kick:1 HatPedal:-1\nR_FILL_LEAD\nInvest 14h | Net +54.8h"];
+  n5 [label="HH:L  Ride:R  Crash:R  Floor:R\nbaseline\nInvest 0h | Net +0.0h", fillcolor="#E7F1F9", style="rounded,filled"];
+  n6 [label="HH:L  Ride:L  Crash:R  Floor:R\nR_FILL_LEAD,LEAD_SWITCH\nInvest 17h | Net +73.2h"];
+  n7 [label="HH:L  Ride:L  Crash:R  Floor:R\nR_FILL_LEAD\nInvest 11h | Net +60.2h"];
+  n8 [label="HH:L  Ride:L  Crash:L  Floor:R\nbaseline\nInvest 3.5h | Net +44.7h"];
+  n9 [label="HH:L  Ride:R  Crash:L  Floor:R\nbaseline\nInvest 1.5h | Net +10.7h"];
+  n10 [label="HH:L  Ride:L  Crash:R  Floor:R\nToms:0 Snare:1 Kick:1 HatPedal:-1\nbaseline\nInvest 5h | Net +28.3h"];
+  n11 [label="HH:L  Ride:L  Crash:L  Floor:R\nL_SNARE,R_FILL_LEAD,LEAD_SWITCH\nInvest 27.5h | Net +73.8h"];
+  n12 [label="HH:L  Ride:L  Crash:R  Floor:R\nbaseline\nInvest 2h | Net +33.9h"];
+  n13 [label="HH:L  Ride:L  Crash:L  Floor:R\nR_FILL_LEAD\nInvest 12.5h | Net +58.5h"];
+  n13 -> n0 [label="learn LEAD_SWITCH (6h)"];
+  n8 -> n13 [label="learn RIGHT_FILL_LEAD (9h)"];
+  n9 -> n8 [label="move ride to -1 (2h)"];
+  n5 -> n9 [label="move crash to -1 (1.5h)"];
+  n6 -> n1 [label="learn LEFT_SNARE (9h)"];
+  n7 -> n6 [label="learn LEAD_SWITCH (6h)"];
+  n12 -> n7 [label="learn RIGHT_FILL_LEAD (9h)"];
+  n5 -> n12 [label="move ride to -1 (2h)"];
+  n0 -> n11 [label="learn LEFT_SNARE (9h)"];
+  n3 -> n2 [label="learn LEFT_SNARE (9h)"];
+  n4 -> n3 [label="learn LEAD_SWITCH (6h)"];
+  n10 -> n4 [label="learn RIGHT_FILL_LEAD (9h)"];
+  n12 -> n10 [label="move snare to +1 (3h)"];
+}

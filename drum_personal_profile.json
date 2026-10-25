@@ -1,0 +1,66 @@
+{
+  "_instructions": "Illustrative profile. Every value is a hypothesis: lower execution penalties mean easier for YOU, not inherently easier for humans. Edit, rerun and compare sensitivity.",
+  "initial_kit": {"hh": -1, "ride": 1, "crash": 1, "floor": 1, "toms": 0, "snare": 0, "kick_foot": 1, "hat_foot": -1},
+  "initial_skills": [],
+  "budget_hours": 34,
+  "horizons_hours": [30, 200, 800],
+  "beam_width": 44,
+  "max_layout_edits": 2,
+  "max_new_skills": 3,
+  "benefit_factor": 0.065,
+  "movement_weight": 0.24,
+  "wrong_side_weight": 0.23,
+  "direction_lead_weight": 0.50,
+  "crossed_arms_penalty": 0.10,
+  "neural_stroke_penalties": {
+    "HH_L": 0.045,
+    "HH_R_untrained": 0.48,
+    "HH_R_trained": 0.065,
+    "RIDE_L": 0.10,
+    "RIDE_R_untrained": 0.45,
+    "RIDE_R_trained": 0.065,
+    "SN_R": 0.055,
+    "SN_L_untrained": 0.30,
+    "SN_L_trained": 0.055,
+    "TOM_L": 0.035,
+    "TOM_R_untrained": 0.18,
+    "TOM_R_trained": 0.045
+  },
+  "hand_foot_pairing": {
+    "L_HH_R_SN_KR": 0.04,
+    "R_HH_L_SN_KR": 0.24,
+    "R_RIDE_L_SN_KR": 0.18,
+    "L_RIDE_R_SN_KR": 0.06,
+    "L_HH_R_SN_KL": 0.20,
+    "R_HH_L_SN_KL": 0.14
+  },
+  "skill_hours": {
+    "RIGHT_HH": 11.0,
+    "RIGHT_RIDE": 8.0,
+    "LEFT_SNARE": 9.0,
+    "RIGHT_FILL_LEAD": 9.0,
+    "LEAD_SWITCH": 6.0,
+    "CROSSED_HAND_FOOT": 7.0,
+    "LEFT_KICK": 12.0,
+    "RIGHT_HAT_FOOT": 10.0
+  },
+  "layout_hours": {
+    "hh": 11.0,
+    "ride": 2.0,
+    "crash": 1.5,
+    "floor": 9.0,
+    "toms": 6.0,
+    "snare": 3.0,
+    "kick_foot": 10.0,
+    "hat_foot": 8.0
+  },
+  "repertoire_weights": {
+    "straight_hh": 0.25,
+    "syncopated_hh": 0.16,
+    "right_ride": 0.18,
+    "rightward_fill": 0.16,
+    "leftward_fill": 0.07,
+    "round_trip_fill": 0.10,
+    "groove_to_fill": 0.08
+  }
+}

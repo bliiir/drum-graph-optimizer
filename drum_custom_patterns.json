@@ -1,0 +1,19 @@
+{
+  "patterns": [
+    {
+      "name": "ascending_RRLL_geometry",
+      "weight": 0.10,
+      "events": ["SN", "SN", "SN", "SN", "T1", "T1", "T1", "T1", "T2", "T2", "T2", "T2", "FT", "FT", "FT", "FT", "CRASH"]
+    },
+    {
+      "name": "ride_kick_and_hat_foot",
+      "weight": 0.08,
+      "events": ["RIDE+KICK", "RIDE", "RIDE+SN+HAT_PEDAL", "RIDE", "RIDE+KICK", "RIDE", "RIDE+SN+HAT_PEDAL", "RIDE+KICK"]
+    },
+    {
+      "name": "reverse_tom_fill",
+      "weight": 0.12,
+      "events": ["FT", "FT", "FT", "FT", "T2", "T2", "T2", "T2", "T1", "T1", "T1", "T1", "SN", "SN", "SN", "SN", "CRASH"]
+    }
+  ]
+}
